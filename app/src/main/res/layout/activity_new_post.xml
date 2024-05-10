@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/inputLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Post type :" />
+
+                <RadioGroup
+                    android:id="@+id/rdType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rdLost"
+                        style="@style/radioLabel"
+                        android:checked="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Lost" />
+
+                    <RadioButton
+                        android:id="@+id/rdFound"
+                        style="@style/radioLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="Found" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/inputLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Name :" />
+
+            <EditText
+                style="@style/inputText"
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:imeOptions="actionNext"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/shape_edit"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/inputLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Phone :" />
+
+            <EditText
+                style="@style/inputText"
+                android:id="@+id/edPhone"
+                android:layout_width="match_parent"
+                android:imeOptions="actionNext"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/shape_edit"
+                android:inputType="number" />
+
+
+            <TextView
+                style="@style/inputLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Description :" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/edInfo"
+                android:background="@drawable/shape_edit"
+                android:gravity="start"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                style="@style/inputLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Date :" />
+
+            <TextView
+                style="@style/inputText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:gravity="center_vertical"
+                android:id="@+id/edDate"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/shape_edit" />
+
+            <TextView
+                style="@style/inputLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Location :" />
+
+            <TextView
+                style="@style/inputText"
+                android:id="@+id/edLocation"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/shape_edit"
+                android:inputType="text" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnGetLocation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:cardBackgroundColor="@color/colorApp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:strokeColor="#737373"
+                app:strokeWidth="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="get current location"
+                    android:textAllCaps="true"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnSave"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_25sdp"
+                app:cardBackgroundColor="@color/colorApp"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:strokeColor="#737373"
+                app:strokeWidth="@dimen/_1sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textAllCaps="true"
+                    android:textColor="#737373"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

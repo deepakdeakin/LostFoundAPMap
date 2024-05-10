@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Found And Lost App</string>
+    <string name="api_key">AIzaSyBIGlCGiViitx_37qdOcvw5DAwKRuYei8o</string>
+    <string name="create_a_new_advert">Create a New Advert</string>
+    <string name="show_all_lost_amp_found_items">Show All Lost &amp; Found Items</string>
+    <string name="show_on_map">Show on Map</string>
+    <string name="gps_message">Your Location/GPS Setting must be turned on for Find My Phone to work. Please turn on Location/GPS in the phone settings.</string>
+    <string name="turn_on_location_gps">Turn on Location/GPS</string>
+</resources>
